@@ -8,7 +8,7 @@
 import protocol TapAdditionsKit.ClassProtocol
 
 /// Protocol to retrieve interesting plist info from the main application bundle.
-public protocol TapApplicationWithPlist: ClassProtocol {}
+public protocol TapApplicationWithPlist: ClassProtocol, TapBundleWithPlist {}
 
 public extension TapApplicationWithPlist {
 
@@ -18,25 +18,19 @@ public extension TapApplicationWithPlist {
     /// Application display name.
     public var displayName: String {
 
-        return self.infoPlistString(for: InfoPlistKeys.displayName)
+        return self.plistObject(for: TapBundleInfoKeys.displayName) ?? .empty
     }
 
     /// Application short version ( e.g. "1.1" )
     public var shortVersion: String {
 
-        return self.infoPlistString(for: InfoPlistKeys.shortVersion)
+        return self.shortVersionString ?? .empty
     }
 
     /// Application build string.
     public var build: String {
 
-        return self.infoPlistString(for: InfoPlistKeys.build)
-    }
-
-    /// Bundle identifier.
-    public var bundleIdentifier: String {
-
-        return self.infoPlistString(for: InfoPlistKeys.bundleIdentifier)
+        return self.bundleVersion ?? .empty
     }
 
     /// Deep link URL scheme (if present).
@@ -77,10 +71,6 @@ public extension TapApplicationWithPlist {
 
 private struct InfoPlistKeys {
 
-    fileprivate static let build = "CFBundleVersion"
-    fileprivate static let bundleIdentifier = "CFBundleIdentifier"
-    fileprivate static let displayName = "CFBundleDisplayName"
-    fileprivate static let shortVersion = "CFBundleShortVersionString"
     fileprivate static let urlTypes = "CFBundleURLTypes"
 
     fileprivate struct URLTypes {

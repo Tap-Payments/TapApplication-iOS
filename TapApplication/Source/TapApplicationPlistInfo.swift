@@ -1,17 +1,17 @@
 //
-//  ApplicationPlistInfo.swift
+//  TapApplicationPlistInfo.swift
 //  TapApplication
 //
 //  Copyright © 2018 Tap Payments. All rights reserved.
 //
 
 /// Dummy class to get application plist information.
-public class ApplicationPlistInfo {
+public class TapApplicationPlistInfo {
 
     // MARK: - Public -
     // MARK: Properties
 
-    public static let shared = ApplicationPlistInfo()
+    public static let shared = TapApplicationPlistInfo()
 
     // MARK: - Private -
     // MARK: Methods
@@ -20,4 +20,10 @@ public class ApplicationPlistInfo {
 }
 
 // MARK: - TapApplicationWithPlist
-extension ApplicationPlistInfo: TapApplicationWithPlist {}
+extension TapApplicationPlistInfo: TapApplicationWithPlist {
+
+    public var bundle: Bundle {
+
+        return .main
+    }
+}

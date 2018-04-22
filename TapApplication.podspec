@@ -6,7 +6,7 @@ Pod::Spec.new do |tapApplication|
     tapApplication.name = 'TapApplication'
     tapApplication.summary = 'Base Application interface.'
     tapApplication.requires_arc = true
-    tapApplication.version = '1.0'
+    tapApplication.version = '1.0.1'
     tapApplication.license = { :type => 'MIT', :file => 'LICENSE' }
     tapApplication.author = { 'Tap Payments' => 'hello@tap.company' }
     tapApplication.homepage = 'https://github.com/Tap-Payments/TapApplication-iOS'
