@@ -2,6 +2,7 @@ Pod::Spec.new do |tapApplication|
     
     tapApplication.platform = :ios
     tapApplication.ios.deployment_target = '8.0'
+    tapApplication.swift_version = '4.1'
     tapApplication.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
     tapApplication.name = 'TapApplication'
     tapApplication.summary = 'Base Application interface.'
