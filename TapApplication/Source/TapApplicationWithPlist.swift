@@ -36,7 +36,7 @@ public extension TapApplicationWithPlist {
     /// Deep link URL scheme (if present).
     public var deepLinkURLScheme: String? {
 
-        guard let urlTypes = Bundle.main.object(forInfoDictionaryKey: InfoPlistKeys.urlTypes) as? [[String: Any]] else { return nil }
+        guard let urlTypes: [[String: Any]] = self.plistObject(for: InfoPlistKeys.urlTypes) else { return nil }
 
         let bundleID = self.bundleIdentifier
 
@@ -53,19 +53,12 @@ public extension TapApplicationWithPlist {
         return nil
     }
 
-    // MARK: - Private -
+    // MARK: - Internal -
     // MARK: Methods
 
-    private func infoPlistString(for key: String) -> String {
+    internal func infoPlistString(for key: String) -> String {
 
-        if let result = Bundle.main.object(forInfoDictionaryKey: key) as? String {
-
-            return result
-
-        } else {
-
-            return .empty
-        }
+        return self.plistObject(for: key) ?? .empty
     }
 }
 

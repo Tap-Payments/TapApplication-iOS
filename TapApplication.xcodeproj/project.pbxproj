@@ -10,6 +10,7 @@
 		3478B5F50AD63F2088664714 /* Pods_TapApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95763FD27255DD09A2D5769A /* Pods_TapApplication.framework */; };
 		A40F5FD62085F73D001D6A9A /* TapApplicationWithPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40F5FD52085F73D001D6A9A /* TapApplicationWithPlist.swift */; };
 		A40F5FD82085F899001D6A9A /* TapApplicationPlistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40F5FD72085F899001D6A9A /* TapApplicationPlistInfo.swift */; };
+		A427588C20A324E900D214EE /* TapSystemPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427588B20A324E900D214EE /* TapSystemPermission.swift */; };
 		A43D8ADD1FB4D2F500B280A5 /* TapApplication.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A43D8ADC1FB4D2F500B280A5 /* TapApplication.podspec */; };
 		A43D8ADF1FB4D30700B280A5 /* TapApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D8ADE1FB4D30700B280A5 /* TapApplication.swift */; };
 		A4B42EA61FB4D25B0026DA4D /* TapApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B42EA41FB4D25B0026DA4D /* TapApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 		95763FD27255DD09A2D5769A /* Pods_TapApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40F5FD52085F73D001D6A9A /* TapApplicationWithPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapApplicationWithPlist.swift; sourceTree = "<group>"; };
 		A40F5FD72085F899001D6A9A /* TapApplicationPlistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapApplicationPlistInfo.swift; sourceTree = "<group>"; };
+		A427588B20A324E900D214EE /* TapSystemPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapSystemPermission.swift; sourceTree = "<group>"; };
 		A43D8ADC1FB4D2F500B280A5 /* TapApplication.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TapApplication.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A43D8ADE1FB4D30700B280A5 /* TapApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapApplication.swift; sourceTree = "<group>"; };
 		A4B42EA11FB4D25B0026DA4D /* TapApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,12 +68,13 @@
 		A43D8ADB1FB4D2DD00B280A5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A40F5FD72085F899001D6A9A /* TapApplicationPlistInfo.swift */,
 				A43D8ADE1FB4D30700B280A5 /* TapApplication.swift */,
+				A40F5FD72085F899001D6A9A /* TapApplicationPlistInfo.swift */,
 				A40F5FD52085F73D001D6A9A /* TapApplicationWithPlist.swift */,
-				A4C0FC38208CB79D00C5FBC6 /* TapBundleWithPlist.swift */,
 				A4C0FC3A208CB90200C5FBC6 /* TapBundleInfoKeys.swift */,
 				A4C0FC3C208CC86700C5FBC6 /* TapBundlePlistInfo.swift */,
+				A4C0FC38208CB79D00C5FBC6 /* TapBundleWithPlist.swift */,
+				A427588B20A324E900D214EE /* TapSystemPermission.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C0FC3D208CC86700C5FBC6 /* TapBundlePlistInfo.swift in Sources */,
+				A427588C20A324E900D214EE /* TapSystemPermission.swift in Sources */,
 				A43D8ADF1FB4D30700B280A5 /* TapApplication.swift in Sources */,
 				A40F5FD62085F73D001D6A9A /* TapApplicationWithPlist.swift in Sources */,
 				A4C0FC39208CB79D00C5FBC6 /* TapBundleWithPlist.swift in Sources */,
