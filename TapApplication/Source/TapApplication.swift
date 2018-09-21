@@ -5,18 +5,18 @@
 //  Copyright © 2018 Tap Payments. All rights reserved.
 //
 
-import func TapSwiftFixes.performOnMainThread
-import struct TapAdditionsKit.TypeAlias
-import class UIKit.UIApplication.UIApplication
-import enum UIKit.UIApplication.UIInterfaceOrientation
-import enum UIKit.UIApplication.UIStatusBarAnimation
-import enum UIKit.UIApplication.UIStatusBarStyle
-import enum UIKit.UIInterface.UIUserInterfaceLayoutDirection
-import class UIKit.UINavigationBar.UINavigationBar
-import class UIKit.UITabBar.UITabBar
-import enum UIKit.UIView.UISemanticContentAttribute
-import class UIKit.UIView.UIView
-import class UIKit.UIViewController.UIViewController
+import func     TapSwiftFixes.performOnMainThread
+import struct   TapAdditionsKit.TypeAlias
+import class    UIKit.UIApplication.UIApplication
+import enum     UIKit.UIApplication.UIInterfaceOrientation
+import enum     UIKit.UIApplication.UIStatusBarAnimation
+import enum     UIKit.UIApplication.UIStatusBarStyle
+import enum     UIKit.UIInterface.UIUserInterfaceLayoutDirection
+import class    UIKit.UINavigationBar.UINavigationBar
+import class    UIKit.UITabBar.UITabBar
+import enum     UIKit.UIView.UISemanticContentAttribute
+import class    UIKit.UIView.UIView
+import class    UIKit.UIViewController.UIViewController
 
 /// Tap Application interface.
 public protocol TapApplication: TapApplicationWithPlist {
