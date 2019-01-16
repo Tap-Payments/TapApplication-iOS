@@ -2,7 +2,7 @@
 //  TapApplicationPlistInfo.swift
 //  TapApplication
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 /// Dummy class to get application plist information.
@@ -32,7 +32,7 @@ public class TapApplicationPlistInfo {
 
         let keys = permission.plistKeys
 
-        let result: [String] = keys.compactMap { if let text: String = self.plistObject(for: $0), text.length > 0 { return text } else { return nil } }
+        let result: [String] = keys.compactMap { if let text: String = self.plistObject(for: $0), text.tap_length > 0 { return text } else { return nil } }
 
         if result.count > 0 {
 

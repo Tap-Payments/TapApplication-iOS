@@ -2,7 +2,7 @@
 //  TapApplication.swift
 //  TapApplication
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 import func     TapSwiftFixes.performOnMainThread
@@ -160,7 +160,7 @@ public extension TapApplication {
 
         for window in UIApplication.shared.windows {
 
-            guard let topmostController = window.rootViewController?.currentPresentedViewController else {
+            guard let topmostController = window.rootViewController?.tap_currentPresentedViewController else {
 
                 partialCompletion()
                 continue

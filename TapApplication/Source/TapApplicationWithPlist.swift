@@ -2,7 +2,7 @@
 //  TapApplicationWithPlist.swift
 //  TapApplication
 //
-//  Copyright © 2018 Tap Payments. All rights reserved.
+//  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
 import protocol TapAdditionsKit.ClassProtocol
@@ -18,19 +18,19 @@ public extension TapApplicationWithPlist {
     /// Application display name.
     public var displayName: String {
 
-        return self.plistObject(for: TapBundleInfoKeys.displayName) ?? .empty
+        return self.plistObject(for: TapBundleInfoKeys.displayName) ?? .tap_empty
     }
 
     /// Application short version ( e.g. "1.1" )
     public var shortVersion: String {
 
-        return self.shortVersionString ?? .empty
+        return self.shortVersionString ?? .tap_empty
     }
 
     /// Application build string.
     public var build: String {
 
-        return self.bundleVersion ?? .empty
+        return self.bundleVersion ?? .tap_empty
     }
 
     /// Deep link URL scheme (if present).
@@ -58,7 +58,7 @@ public extension TapApplicationWithPlist {
 
     internal func infoPlistString(for key: String) -> String {
 
-        return self.plistObject(for: key) ?? .empty
+        return self.plistObject(for: key) ?? .tap_empty
     }
 }
 
