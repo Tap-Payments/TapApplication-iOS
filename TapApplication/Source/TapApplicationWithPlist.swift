@@ -16,25 +16,25 @@ public extension TapApplicationWithPlist {
     // MARK: Properties
 
     /// Application display name.
-    public var displayName: String {
+    var displayName: String {
 
         return self.plistObject(for: TapBundleInfoKeys.displayName) ?? .tap_empty
     }
 
     /// Application short version ( e.g. "1.1" )
-    public var shortVersion: String {
+    var shortVersion: String {
 
         return self.shortVersionString ?? .tap_empty
     }
 
     /// Application build string.
-    public var build: String {
+    var build: String {
 
         return self.bundleVersion ?? .tap_empty
     }
 
     /// Deep link URL scheme (if present).
-    public var deepLinkURLScheme: String? {
+    var deepLinkURLScheme: String? {
 
         guard let urlTypes: [[String: Any]] = self.plistObject(for: InfoPlistKeys.urlTypes) else { return nil }
 

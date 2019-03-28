@@ -52,19 +52,19 @@ public extension TapApplication {
     // MARK: Properties
 
     /// Application documents path.
-    public var documentsPath: String {
+    var documentsPath: String {
 
         return self.directory(with: FileManager.SearchPathDirectory.documentDirectory)
     }
 
     /// Application cache path.
-    public var cachesPath: String {
+    var cachesPath: String {
 
         return self.directory(with: FileManager.SearchPathDirectory.cachesDirectory)
     }
 
     /// App store URL.
-    public var appStoreURL: URL {
+    var appStoreURL: URL {
 
         let urlString = "https://itunes.apple.com/app/id\(self.identifier)"
 
@@ -77,7 +77,7 @@ public extension TapApplication {
     }
 
     /// Application reviews URL. Note: This URL won't be opened on iOS devices with iOS 10.3 or higher. Use 'newApplicationReviewsURL' instead.
-    public var oldApplicationReviewsURL: URL {
+    var oldApplicationReviewsURL: URL {
 
         let reviewsURLString = "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?pageNumber=0&sortOrdering=1&type=Purple+Software&mt=8&id=\(self.identifier)"
 
@@ -90,7 +90,7 @@ public extension TapApplication {
     }
 
     /// Application reviews URL. Note: This URL won't be opened on iOS devices with iOS 10.3 or less. Use 'oldApplicationReviewsURL' instead.
-    public var newApplicationReviewsURL: URL {
+    var newApplicationReviewsURL: URL {
 
         let reviewsURLString = "itms-apps://itunes.apple.com/us/app/id\(self.identifier)?action=write-review"
 
@@ -107,7 +107,7 @@ public extension TapApplication {
     /// - Parameters:
     ///   - hidden: Defines if status bar should be hidden.
     ///   - animation: Animation style.
-    public func setStatusBarHidden(_ hidden: Bool, with animation: UIStatusBarAnimation) {
+    func setStatusBarHidden(_ hidden: Bool, with animation: UIStatusBarAnimation) {
 
         UIApplication.shared.setStatusBarHidden(hidden, with: animation)
     }
@@ -117,7 +117,7 @@ public extension TapApplication {
     /// - Parameters:
     ///   - statusBarStyle: Required status bar style.
     ///   - animated: Defines if change should happen with animation
-    public func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool) {
+    func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool) {
 
         UIApplication.shared.setStatusBarStyle(statusBarStyle, animated: animated)
     }
@@ -127,7 +127,7 @@ public extension TapApplication {
     /// - Parameters:
     ///   - interfaceOrientation: Required status bar orientation.
     ///   - animated: Defines if change should happen with animation
-    public func setStatusBarOrientation(_ interfaceOrientation: UIInterfaceOrientation, animated: Bool) {
+    func setStatusBarOrientation(_ interfaceOrientation: UIInterfaceOrientation, animated: Bool) {
 
         UIApplication.shared.setStatusBarOrientation(interfaceOrientation, animated: animated)
     }
@@ -135,7 +135,7 @@ public extension TapApplication {
     // MARK: Methods
 
     /// Updates layout direction in the whole app.
-    @available(iOS 9.0, *) public func updateLayoutDirection() {
+    @available(iOS 9.0, *) func updateLayoutDirection() {
 
         performOnMainThread {
 
@@ -145,7 +145,7 @@ public extension TapApplication {
     }
 
     /// Forces interface orienatation update.
-    public func forceInterfaceOrientationUpdate(_ completion: TypeAlias.ArgumentlessClosure? = nil) {
+    func forceInterfaceOrientationUpdate(_ completion: TypeAlias.ArgumentlessClosure? = nil) {
 
         var finishedCount = 0
         let partialCompletion: TypeAlias.ArgumentlessClosure = {

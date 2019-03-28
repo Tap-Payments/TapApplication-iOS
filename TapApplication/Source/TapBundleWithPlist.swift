@@ -21,117 +21,117 @@ public extension TapBundleWithPlist {
     // MARK: - Public -
     // MARK: Properties
 
-    public var buildMachineOSBuild: String? {
+    var buildMachineOSBuild: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.buildMachineOSBuild)
     }
 
-    public var bundleDevelopmentRegion: String? {
+    var bundleDevelopmentRegion: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleDevelopmentRegion)
     }
 
-    public var bundleExecutable: String? {
+    var bundleExecutable: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleExecutable)
     }
 
-    public var bundleIdentifier: String? {
+    var bundleIdentifier: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleIdentifier)
     }
 
-    public var bundleInfoDictionaryVersion: String? {
+    var bundleInfoDictionaryVersion: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleInfoDictionaryVersion)
     }
 
-    public var bundleName: String? {
+    var bundleName: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleName)
     }
 
-    public var bundleNumericVersion: Int64? {
+    var bundleNumericVersion: Int64? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleNumericVersion)
     }
 
-    public var bundlePackageType: String? {
+    var bundlePackageType: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundlePackageType)
     }
 
-    public var shortVersionString: String? {
+    var shortVersionString: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.shortVersionString)
     }
 
-    public var bundleSignature: String? {
+    var bundleSignature: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleSignature)
     }
 
-    public var supportedPlatforms: [String]? {
+    var supportedPlatforms: [String]? {
 
         return self.plistObject(for: TapBundleInfoKeys.supportedPlatforms)
     }
 
-    public var bundleVersion: String? {
+    var bundleVersion: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.bundleVersion)
     }
 
-    public var compiler: String? {
+    var compiler: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.compiler)
     }
 
-    public var platformBuild: String? {
+    var platformBuild: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.platformBuild)
     }
 
-    public var platformName: String? {
+    var platformName: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.platformName)
     }
 
-    public var platformVersion: String? {
+    var platformVersion: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.platformVersion)
     }
 
-    public var sdkBuild: String? {
+    var sdkBuild: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.sdkBuild)
     }
 
-    public var sdkName: String? {
+    var sdkName: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.sdkName)
     }
 
-    public var xcodeVersion: String? {
+    var xcodeVersion: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.xcodeVersion)
     }
 
-    public var xcodeBuild: String? {
+    var xcodeBuild: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.xcodeBuild)
     }
 
-    public var minimumOSVersion: String? {
+    var minimumOSVersion: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.minimumOSVersion)
     }
 
-    public var deviceFamily: [UIUserInterfaceIdiom]? {
+    var deviceFamily: [UIUserInterfaceIdiom]? {
 
         return self.plistObject(for: TapBundleInfoKeys.deviceFamily)
     }
 
-    public var requiredDeviceCapabilities: String? {
+    var requiredDeviceCapabilities: String? {
 
         return self.plistObject(for: TapBundleInfoKeys.requiredDeviceCapabilities)
     }

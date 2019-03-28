@@ -1,15 +1,15 @@
-TapAdditionsKitDependencyVersion    = '>= 1.2'     unless defined? TapAdditionsKitDependencyVersion
-TapSwiftFixesDependencyVersion      = '>= 1.0.5'   unless defined? TapSwiftFixesDependencyVersion
+TapAdditionsKitDependencyVersion    = '>= 1.3.1'     unless defined? TapAdditionsKitDependencyVersion
+TapSwiftFixesDependencyVersion      = '>= 1.0.8'   unless defined? TapSwiftFixesDependencyVersion
 
 Pod::Spec.new do |tapApplication|
     
     tapApplication.platform                 = :ios
     tapApplication.ios.deployment_target    = '8.0'
-    tapApplication.swift_version            = '4.2'
+    tapApplication.swift_versions			= ['4.2', '5.0']
     tapApplication.name                     = 'TapApplication'
     tapApplication.summary                  = 'Base Application interface.'
     tapApplication.requires_arc             = true
-    tapApplication.version                  = '1.0.5'
+    tapApplication.version                  = '1.0.6'
     tapApplication.license                  = { :type => 'MIT', :file => 'LICENSE' }
     tapApplication.author                   = { 'Tap Payments' => 'hello@tap.company' }
     tapApplication.homepage                 = 'https://github.com/Tap-Payments/TapApplication-iOS'
